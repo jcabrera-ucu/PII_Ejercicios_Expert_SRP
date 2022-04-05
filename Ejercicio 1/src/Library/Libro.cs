@@ -2,6 +2,8 @@
 
 namespace SRP
 {
+    // Esta clase no cumple con SRP ya que además de tener la responsabilidad
+    // de conocer los datos propios del libro, también conoce dónde se encuentra.
     public class Libro
     {
 
