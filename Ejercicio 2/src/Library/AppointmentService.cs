@@ -5,6 +5,10 @@ namespace Library
 {
     public class AppointmentService
     {
+        //  Esta clase esta muy sobrecargada, tiene la responsabilidad de conocer al paciente, al doctor, y de generar las consultas.
+        //  Como dice la letra, necesitamos agregar edad al paciente, especializacion a los doctores, e identificación a la consulta. 
+        //  Si quisieramos agregar atributos al doctor o paciente deberiamos modificar la firma de la función, y por cada uno de estos atributos
+        //  deberiamos cambiar los verificadores. Esto no aplica srp.
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
         {
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
